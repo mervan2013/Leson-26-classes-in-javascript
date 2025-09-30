@@ -1,0 +1,25 @@
+ <html>
+    <head></head>
+    <body>
+        <h1>Car</h1>
+        <p>Cars are good</p>
+        <p id="c"></p>
+        <p id="d"></p>
+        <script>
+            class student{
+                constructor(name, year){
+                    this.name=name;
+                    this.year=year;
+                }
+                age(){
+                    let date=new Date()
+                    return date.getFullYear() - this.year;
+                }
+            }
+            c=new student("m", 2016);
+            document.getElementById("c").innerHTML="My name is " + c.name + ".I born in " + c.year + ".And my age is " + c.age();
+            d=new student("v", 2018);
+            document.getElementById("d").innerHTML="My name is " + d.name + ".I born in " + d.year + ".And my age is " + d.age();
+        </script>
+    </body>
+</html>
